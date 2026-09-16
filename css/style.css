@@ -77,8 +77,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .hero-inner { position: relative; }
 .hero-copy { max-width: 720px; }
-.hero-figure { margin: 0 0 40px; width: min(90vw, 640px); }
-.hero-figure img { width: 100%; height: auto; mix-blend-mode: screen; }
+.hero-figure { margin: 0 0 40px; width: min(100%, 640px); }
+.hero-figure img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 504; object-fit: contain; mix-blend-mode: screen; }
 .eyebrow { color: var(--accent); margin-bottom: 20px; }
 .lead { font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 620px; margin: 24px 0 32px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
