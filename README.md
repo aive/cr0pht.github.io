@@ -1,14 +1,15 @@
-# cr0pht — Tech · Growth · Innovation
+# cr0pht — Security Research
 
-Single-page static website for cr0pht. Plain HTML, CSS and a little
+Single-page static website for cr0pht, a security research practice. Plain HTML, CSS and a little
 JavaScript. No build step, no framework, no dependencies beyond two Google
 Fonts.
 
 ## Files
 
-- `index.html` — the whole site: hero, services, approach, work, about, contact
+- `index.html` — the whole site: hero, contact
 - `css/style.css` — styling, dark theme, responsive down to phones
-- `js/main.js` — mobile menu, scroll reveal, stat counters, contact form submit
+- `js/main.js` — scroll reveal, contact form submit
+- `img/` — the hero logo lockup (`logo-1200.jpg`, `logo-700.jpg`), favicons cut from the hen, and the 1200×630 social share card (`og-card.jpg`); the originals sit in the project root
 
 ## Preview locally
 
@@ -29,8 +30,7 @@ GitHub Pages or an S3 bucket. There is nothing to compile.
 1. **Contact form.** The form posts to a placeholder Formspree URL. Create a
    form at formspree.io (or any form endpoint) and replace `your-form-id` in
    `index.html`. Until then the form shows a notice pointing to the email.
-2. **Content.** The client names, case studies and figures are placeholders.
-   Replace them with real ones in `index.html`.
+2. **Content.** Review the copy in `index.html` and adjust to taste.
 3. **Email.** `cr0pht@proton.me` appears in the contact section, footer script
    and form fallback message.
 4. **Analytics.** Add your snippet before `</head>` if you want it.
