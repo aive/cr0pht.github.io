@@ -1,15 +1,16 @@
 # cr0pht — Security Research
 
 Single-page static website for cr0pht, a security research practice. Plain HTML, CSS and a little
-JavaScript. No build step, no framework, no dependencies beyond two Google
-Fonts.
+JavaScript. No build step, no framework, no dependencies beyond two web
+fonts: Inter from rsms.me (its build includes the slashed-zero feature used
+for the brand name) and JetBrains Mono from Google Fonts.
 
 ## Files
 
 - `index.html` — the whole site: hero, contact
 - `css/style.css` — styling, dark theme, responsive down to phones
 - `js/main.js` — scroll reveal, contact form submit
-- `img/` — the hero logo lockup (`logo-1200.jpg`, `logo-700.jpg`), favicons cut from the hen, and the 1200×630 social share card (`og-card.jpg`); the originals sit in the project root
+- `img/` — the hero logo lockup (`logo-1200.jpg`, `logo-700.jpg`), favicons cut from the hen, and the 1200×630 social share card (`og-card.jpg`); the original logo PNG sits in the project root
 
 ## Preview locally
 

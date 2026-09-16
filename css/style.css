@@ -36,6 +36,7 @@ p { margin: 0 0 1em; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 .mono { font-family: var(--mono); font-size: 13px; letter-spacing: 0.02em; }
 .muted { color: var(--muted); }
+.brand { font-variant-numeric: slashed-zero; font-feature-settings: "zero" 1; }
 .accent { color: var(--accent); }
 .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--bg); padding: 6px 10px; z-index: 100; }
