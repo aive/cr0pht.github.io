@@ -8,20 +8,17 @@
   <meta property="og:title" content="cr0pht — Security Research">
   <meta property="og:description" content="Penetration testing, security research and responsible disclosure.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cr0pht.com/">
-  <meta property="og:image" content="https://cr0pht.com/img/og-card.jpg">
+  <meta property="og:url" content="https://www.cr0pht.com/">
+  <meta property="og:image" content="https://www.cr0pht.com/img/og-card.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://cr0pht.com/">
+  <link rel="canonical" href="https://www.cr0pht.com/">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,7 +60,7 @@
           <p class="section-intro">A short note about your system and your timeline is enough. We'll reply within two working days with questions, a proposed scope and a quote. Need some additional technology consulting? Use the same address.</p>
           <p class="mono"><a href="mailto:cr0pht@proton.me">cr0pht@proton.me</a></p>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/xoevvryb" method="POST">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -80,6 +77,8 @@
             <label for="message">What would you like tested?</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
+          <!-- Honeypot: hidden from people; Formspree drops submissions that fill it. -->
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button class="btn" type="submit">Send message</button>
           <p class="form-note muted">Sensitive details? Ask for our PGP key and we'll send it first.</p>
         </form>

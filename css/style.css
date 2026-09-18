@@ -1,4 +1,21 @@
 /* cr0pht — dark, sharp, a little bit terminal. */
+
+/* Self-hosted fonts (both variable, SIL Open Font License). */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/InterVariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono-latin.woff2") format("woff2");
+}
+
 :root {
   --bg: #0b0d10;
   --bg-alt: #101419;
@@ -103,6 +120,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); }
 .field textarea { resize: vertical; }
+.hp { display: none; }
 .contact-form .btn { width: 100%; }
 .form-note { font-size: 13px; margin: 14px 0 0; text-align: center; }
 .form-status { margin-top: 14px; font-size: 14px; text-align: center; }
